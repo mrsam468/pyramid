@@ -2,12 +2,9 @@ package pyramid;
 
 public class InvertedPyramid {
     public void invertedPyramid(int n){
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n-i;j++){
-                System.out.print("*");
-            }
-
-            System.out.println();
+        for(int i=n;i>0;i--){
+            String shape = "*".repeat(i);
+            System.out.println(shape);
         }
     }
 }
